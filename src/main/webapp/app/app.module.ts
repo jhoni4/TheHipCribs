@@ -13,6 +13,9 @@ import { ThehipcribsEntityModule } from './entities/entity.module';
 import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
+import { ThehipcribsAppCardListingModule } from './card-listing/card-listing.module';
+import { ThehipcribsAppAddListingModule } from './add-listing/add-listing.module';
+import { ThehipcribsAppCardsModule } from './cards/cards.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 
 import {
@@ -35,6 +38,9 @@ import {
         ThehipcribsAdminModule,
         ThehipcribsAccountModule,
         ThehipcribsEntityModule,
+        ThehipcribsAppCardListingModule,
+        ThehipcribsAppAddListingModule,
+        ThehipcribsAppCardsModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
     ],
     declarations: [
