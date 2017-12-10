@@ -18,10 +18,10 @@ module.exports = (config) => {
         frameworks: ['jasmine', 'intl-shim'],
 
         // list of files / patterns to load in the browser
+       
         files: [
-            'spec/entry.ts'
+            'spec/entry.ts',
         ],
-
 
         // list of files to exclude
         exclude: ['e2e/**'],
@@ -29,7 +29,7 @@ module.exports = (config) => {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'spec/entry.ts': ['webpack', 'sourcemap']
+            'spec/entry.ts': ['webpack', 'sourcemap', 'typescript']
         },
 
         webpack: webpackConfig(WATCH),
@@ -37,7 +37,7 @@ module.exports = (config) => {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['dots', 'junit', 'progress', 'karma-remap-istanbul', 'notify'],
+        reporters: ['dots', 'junit', 'progress', 'karma-remap-istanbul', 'notify', 'coverage'],
 
         junitReporter: {
             outputFile: '../../../../build/test-results/karma/TESTS-results.xml'
@@ -48,10 +48,15 @@ module.exports = (config) => {
             reportSuccess: true // Default: true, will notify when a suite was successful
         },
 
-
+        coverageReporter: {
+            dir: 'build/test-results/karmacoverage',
+            reporters: [
+                {type: 'lcov', subdir: 'report-lcov'}
+            ]
+        },
         remapIstanbulReporter: {
             reports: { // eslint-disable-line
-                'lcovonly': 'build/test-results/coverage/report-lcov/lcov.info',
+                'lcovonly': 'build/test-results/istancoverage/report-lcov/lcov.info',
                 'html': 'build/test-results/coverage',
                 'text-summary': null
             }

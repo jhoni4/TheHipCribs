@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.web.rest.AuditResourceIntTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:26" hostname="Yonatans-MacBook-Pro.local" time="0.294">
+  <properties/>
+  <testcase name="getNonExistingAudit" classname="com.yona.jhip.web.rest.AuditResourceIntTest" time="0.083"/>
+  <testcase name="getNonExistingAuditsByDate" classname="com.yona.jhip.web.rest.AuditResourceIntTest" time="0.097"/>
+  <testcase name="getAllAudits" classname="com.yona.jhip.web.rest.AuditResourceIntTest" time="0.057"/>
+  <testcase name="getAuditsByDate" classname="com.yona.jhip.web.rest.AuditResourceIntTest" time="0.027"/>
+  <testcase name="getAudit" classname="com.yona.jhip.web.rest.AuditResourceIntTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

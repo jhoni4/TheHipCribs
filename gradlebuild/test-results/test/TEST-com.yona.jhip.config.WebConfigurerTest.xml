@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.config.WebConfigurerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:28:07" hostname="Yonatans-MacBook-Pro.local" time="5.659">
+  <properties/>
+  <testcase name="testCorsFilterOnOtherPath" classname="com.yona.jhip.config.WebConfigurerTest" time="4.988"/>
+  <testcase name="testCorsFilterDeactivated" classname="com.yona.jhip.config.WebConfigurerTest" time="0.049"/>
+  <testcase name="testStartUpProdServletContext" classname="com.yona.jhip.config.WebConfigurerTest" time="0.366"/>
+  <testcase name="testUndertowHttp2Enabled" classname="com.yona.jhip.config.WebConfigurerTest" time="0.144"/>
+  <testcase name="testCorsFilterOnApiPath" classname="com.yona.jhip.config.WebConfigurerTest" time="0.053"/>
+  <testcase name="testStartUpDevServletContext" classname="com.yona.jhip.config.WebConfigurerTest" time="0.007"/>
+  <testcase name="testCorsFilterDeactivated2" classname="com.yona.jhip.config.WebConfigurerTest" time="0.041"/>
+  <testcase name="testCustomizeServletContainer" classname="com.yona.jhip.config.WebConfigurerTest" time="0.009"/>
+  <system-out><![CDATA[2017-12-09 11:28:12.765  INFO   --- [    Test worker] com.yona.jhip.config.WebConfigurer       : Web application configuration, using profiles: prod
+2017-12-09 11:28:12.895  INFO   --- [    Test worker] com.yona.jhip.config.WebConfigurer       : Web application fully configured
+2017-12-09 11:28:13.323  INFO   --- [    Test worker] com.yona.jhip.config.WebConfigurer       : Web application configuration, using profiles: dev
+2017-12-09 11:28:13.325  INFO   --- [    Test worker] com.yona.jhip.config.WebConfigurer       : Web application fully configured
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

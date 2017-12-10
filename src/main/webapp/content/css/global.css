@@ -19,6 +19,16 @@ a:hover {
     color: #533f03;
     font-weight: bold;
 }
+img {
+    width: 300px;
+}
+.thumbnail {
+  min-height: 380px;
+}
+
+.label {
+  display: inline-block;
+}
 
 /* ==========================================================================
 Browser Upgrade Prompt
@@ -48,7 +58,7 @@ Generic styles
 .jh-card {
     padding: 1.5%;
     margin-top: 20px;
-    border: none;
+    border: solid 1px darkgray;
 }
 
 .error {

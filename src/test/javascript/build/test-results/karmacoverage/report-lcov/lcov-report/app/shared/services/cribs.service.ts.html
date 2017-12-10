@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/shared/services/cribs.service.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/shared/services/</a> cribs.service.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">73.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>22/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.07% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>18/29</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">37.5% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">73.08% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>19/26</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+var __decorate = (this &amp;&amp; this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c &lt; 3 ? target : <span class="branch-1 cbranch-no" title="branch not covered" >desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,</span> d;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof Reflect === "object" &amp;&amp; typeof Reflect.decorate === "function") <span class="cstat-no" title="statement not covered" >r = Reflect.decorate(decorators, target, key, desc);</span>
+    else for (var i = decorators.length - 1; i &gt;= 0; i--) <span class="missing-if-branch" title="else path not taken" >E</span>if (d = decorators[i]) r = (c &lt; 3 ? d(r) : <span class="branch-1 cbranch-no" title="branch not covered" >c &gt; 3 ? d(target, key, r) : d(target, key))</span> || r;
+    return c &gt; 3 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >r </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >Object.defineProperty(target, key, r),</span> r;
+};
+var __metadata = (this &amp;&amp; this.__metadata) || function (k, v) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof Reflect === "object" &amp;&amp; typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var Subject_1 = require("rxjs/Subject");
+require("rxjs/add/operator/map");
+// import { SortByPipe } from '../../pipes/sort-by.pipe';
+var http_1 = require("@angular/http");
+var CribsService = /** @class */ (function () {
+<span class="fstat-no" title="function not covered" >    function CribsService(http) {</span>
+<span class="cstat-no" title="statement not covered" >        this.http = http;</span>
+<span class="cstat-no" title="statement not covered" >        this.newCribSubject = new Subject_1.Subject();</span>
+    }
+    // cribo: any;
+    CribsService.prototype.getAllCribs = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        return this.http.get('http://localhost:4200/data/cribs.json')</span>
+            .map(<span class="fstat-no" title="function not covered" >function (res) {</span> <span class="cstat-no" title="statement not covered" >return res.json(); </span>})
+            .do(<span class="fstat-no" title="function not covered" >function (data) {</span> <span class="cstat-no" title="statement not covered" >return console.log(data); </span>});
+    };
+    // getAllCribs(req?: any) {
+    //       return this.http.get('data/cribs.json')
+    //           .map((res: Response) =&gt; res.json());
+    //   }
+    CribsService.prototype.addCrib = <span class="fstat-no" title="function not covered" >function (data) {</span>
+<span class="cstat-no" title="statement not covered" >        data.image = 'default-crib';</span>
+<span class="cstat-no" title="statement not covered" >        this.newCribSubject.next(data);</span>
+    };
+    CribsService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.Http])
+    ], CribsService);
+    return CribsService;
+}());
+exports.CribsService = CribsService;
+&nbsp;
+&nbsp;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiL1VzZXJzL3lvbmF0YW5tb2xsYS9Eb2N1bWVudHMvd29ya3NwYWNlMy9qaGlwcHktd29ya3N0YXRpb24vdGhlaGlwY3JpYnMvc3JjL21haW4vd2ViYXBwL2FwcC9zaGFyZWQvc2VydmljZXMvY3JpYnMuc2VydmljZS50cyIsInNvdXJjZVJvb3QiOiIvVXNlcnMveW9uYXRhbm1vbGxhL0RvY3VtZW50cy93b3Jrc3BhY2UzL2poaXBweS13b3Jrc3RhdGlvbi90aGVoaXBjcmlicy8iLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9hbmd1bGFyMi10ZW1wbGF0ZS1sb2FkZXIvaW5kZXguanM/a2VlcFVybD10cnVlIS9Vc2Vycy95b25hdGFubW9sbGEvRG9jdW1lbnRzL3dvcmtzcGFjZTMvamhpcHB5LXdvcmtzdGF0aW9uL3RoZWhpcGNyaWJzL25vZGVfbW9kdWxlcy90c2xpbnQtbG9hZGVyL2luZGV4LmpzIS9Vc2Vycy95b25hdGFubW9sbGEvRG9jdW1lbnRzL3dvcmtzcGFjZTMvamhpcHB5LXdvcmtzdGF0aW9uL3RoZWhpcGNyaWJzL3NyYy9tYWluL3dlYmFwcC9hcHAvc2hhcmVkL3NlcnZpY2VzL2NyaWJzLnNlcnZpY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSxzQ0FBMkM7QUFDM0Msd0NBQXVDO0FBQ3ZDLGlDQUErQjtBQUcvQix5REFBeUQ7QUFDekQsc0NBQStDO0FBTy9DO0lBSUUsc0JBQW9CLElBQVU7UUFBVixTQUFJLEdBQUosSUFBSSxDQUFNO1FBRnZCLG1CQUFjLEdBQUcsSUFBSSxpQkFBTyxFQUFPLENBQUM7SUFFVCxDQUFDO0lBQ25DLGNBQWM7SUFFZCxrQ0FBVyxHQUFYO1FBQ0UsTUFBTSxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLHVDQUF1QyxDQUFDO2FBQzVELEdBQUcsQ0FBQyxVQUFDLEdBQUcsSUFBSyxPQUFBLEdBQUcsQ0FBQyxJQUFJLEVBQUUsRUFBVixDQUFVLENBQUM7YUFDeEIsRUFBRSxDQUFDLFVBQUMsSUFBSSxJQUFLLE9BQUEsT0FBTyxDQUFDLEdBQUcsQ0FBQyxJQUFJLENBQUMsRUFBakIsQ0FBaUIsQ0FBQyxDQUFDO0lBQ25DLENBQUM7SUFDRCwyQkFBMkI7SUFDM0IsZ0RBQWdEO0lBQ2hELGlEQUFpRDtJQUNqRCxNQUFNO0lBQ04sOEJBQU8sR0FBUCxVQUFRLElBQUk7UUFDVixJQUFJLENBQUMsS0FBSyxHQUFHLGNBQWMsQ0FBQztRQUM1QixJQUFJLENBQUMsY0FBYyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsQ0FBQztJQUNqQyxDQUFDO0lBbkJVLFlBQVk7UUFEeEIsaUJBQVUsRUFBRTt5Q0FLZSxXQUFJO09BSm5CLFlBQVksQ0FxQnhCO0lBQUQsbUJBQUM7Q0FBQSxBQXJCRCxJQXFCQztBQXJCWSxvQ0FBWSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IFN1YmplY3QgfSBmcm9tICdyeGpzL1N1YmplY3QnO1xuaW1wb3J0ICdyeGpzL2FkZC9vcGVyYXRvci9tYXAnO1xuaW1wb3J0IHtDb21wb25lbnQsIElucHV0LCBPbkluaXR9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuaW1wb3J0IHsgVXRpbFNlcnZpY2UgfSBmcm9tICcuL3V0aWwuc2VydmljZSc7XG4vLyBpbXBvcnQgeyBTb3J0QnlQaXBlIH0gZnJvbSAnLi4vLi4vcGlwZXMvc29ydC1ieS5waXBlJztcbmltcG9ydCB7IEh0dHAsIFJlc3BvbnNlIH0gZnJvbSAnQGFuZ3VsYXIvaHR0cCc7XG5pbXBvcnQgeyBPYnNlcnZhYmxlIH0gZnJvbSAncnhqcy9SeCc7XG5pbXBvcnQgeyBTRVJWRVJfQVBJX1VSTCB9IGZyb20gJy4uLy4uL2FwcC5jb25zdGFudHMnO1xuaW1wb3J0IHsgQ3JpYiB9IGZyb20gJy4uLy4uL2NyaWInO1xuaW1wb3J0IHsgUmVzcG9uc2VXcmFwcGVyLCBjcmVhdGVSZXF1ZXN0T3B0aW9uIH0gZnJvbSAnLi4vLi4vc2hhcmVkJztcblxuQEluamVjdGFibGUoKVxuZXhwb3J0IGNsYXNzIENyaWJzU2VydmljZSB7XG5cbiAgcHVibGljIG5ld0NyaWJTdWJqZWN0ID0gbmV3IFN1YmplY3Q8YW55PigpO1xuXG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgaHR0cDogSHR0cCkgeyB9XG4gIC8vIGNyaWJvOiBhbnk7XG5cbiAgZ2V0QWxsQ3JpYnMoKSB7XG4gICAgcmV0dXJuIHRoaXMuaHR0cC5nZXQoJ2h0dHA6Ly9sb2NhbGhvc3Q6NDIwMC9kYXRhL2NyaWJzLmpzb24nKVxuICAgIC5tYXAoKHJlcykgPT4gcmVzLmpzb24oKSlcbiAgICAuZG8oKGRhdGEpID0+IGNvbnNvbGUubG9nKGRhdGEpKTtcbiAgfVxuICAvLyBnZXRBbGxDcmlicyhyZXE/OiBhbnkpIHtcbiAgLy8gICAgICAgcmV0dXJuIHRoaXMuaHR0cC5nZXQoJ2RhdGEvY3JpYnMuanNvbicpXG4gIC8vICAgICAgICAgICAubWFwKChyZXM6IFJlc3BvbnNlKSA9PiByZXMuanNvbigpKTtcbiAgLy8gICB9XG4gIGFkZENyaWIoZGF0YSkge1xuICAgIGRhdGEuaW1hZ2UgPSAnZGVmYXVsdC1jcmliJztcbiAgICB0aGlzLm5ld0NyaWJTdWJqZWN0Lm5leHQoZGF0YSk7XG4gIH1cblxufVxuIl19
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Dec 09 2017 16:44:19 GMT-0500 (EST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

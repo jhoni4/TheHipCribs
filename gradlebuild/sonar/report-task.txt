@@ -1,0 +1,5 @@
+projectKey=com.yona.jhip:thehipcribs
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.yona.jhip:thehipcribs
+ceTaskId=AWA8VUS-QCIlnyuT3ix9
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWA8VUS-QCIlnyuT3ix9

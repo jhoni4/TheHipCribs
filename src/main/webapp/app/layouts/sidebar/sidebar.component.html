@@ -1,0 +1,45 @@
+<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+
+<div class="nav-side-menu">
+    <div class="brand">My Cribs</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out active">
+                <li>
+                  <a href="#"><i class="fa fa-home fa-lg"></i> Home</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dashboard fa-lg"></i> Dashboard</a>
+                </li>
+                <li data-toggle="collapse" class="nav-item" routerLinkActive="collapsed" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="crib-listing" (click)="collapseNavbar()">
+                    <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>Crib listing</a>
+                </li>
+                <li data-toggle="collapse" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <a routerLink="add-listing" (click)="collapseNavbar()">
+                    <i class="fa fa-gift fa-lg" aria-hidden="true"></i>Add listing</a>
+                </li>
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements</a>
+                </li>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Services</a>
+                </li>  
+                <li data-toggle="collapse" data-target="#new" class="collapsed">
+                  <a href="#"><i class="fa fa-car fa-lg"></i> New</a>
+                </li>
+                <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                </li>
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Users
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>

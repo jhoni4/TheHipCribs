@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.web.rest.UserResourceIntTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:29" hostname="Yonatans-MacBook-Pro.local" time="2.208">
+  <properties/>
+  <testcase name="createUserWithExistingEmail" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.233"/>
+  <testcase name="createUserWithExistingLogin" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.118"/>
+  <testcase name="getAllUsers" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.113"/>
+  <testcase name="updateUser" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.124"/>
+  <testcase name="getAllAuthorities" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.087"/>
+  <testcase name="getUser" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.115"/>
+  <testcase name="createUserWithExistingId" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.1"/>
+  <testcase name="testUserDTOtoUser" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.086"/>
+  <testcase name="testUserEquals" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.094"/>
+  <testcase name="getNonExistingUser" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.096"/>
+  <testcase name="testUserFromId" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.099"/>
+  <testcase name="testAuthorityEquals" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.079"/>
+  <testcase name="updateUserExistingEmail" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.109"/>
+  <testcase name="updateUserExistingLogin" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.119"/>
+  <testcase name="createUser" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.256"/>
+  <testcase name="updateUserLogin" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.159"/>
+  <testcase name="deleteUser" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.098"/>
+  <testcase name="testUserToUserDTO" classname="com.yona.jhip.web.rest.UserResourceIntTest" time="0.078"/>
+  <system-out><![CDATA[2017-12-09 11:29:29.610 ERROR 29161 --- [    Test worker] com.yona.jhip.web.rest.util.HeaderUtil   : Entity processing failed, Email address already in use
+2017-12-09 11:29:29.610  WARN 29161 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Email address already in use
+2017-12-09 11:29:29.732 ERROR 29161 --- [    Test worker] com.yona.jhip.web.rest.util.HeaderUtil   : Entity processing failed, Login already in use
+2017-12-09 11:29:29.734  WARN 29161 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Login already in use
+2017-12-09 11:29:30.277 ERROR 29161 --- [    Test worker] com.yona.jhip.web.rest.util.HeaderUtil   : Entity processing failed, A new user cannot already have an ID
+2017-12-09 11:29:30.277  WARN 29161 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: A new user cannot already have an ID
+2017-12-09 11:29:30.851 ERROR 29161 --- [    Test worker] com.yona.jhip.web.rest.util.HeaderUtil   : Entity processing failed, Email address already in use
+2017-12-09 11:29:30.852  WARN 29161 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Email address already in use
+2017-12-09 11:29:30.971 ERROR 29161 --- [    Test worker] com.yona.jhip.web.rest.util.HeaderUtil   : Entity processing failed, Login already in use
+2017-12-09 11:29:30.972  WARN 29161 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Bad Request: Login already in use
+2017-12-09 11:29:31.399  WARN 29161 --- [ribs-Executor-1] com.yona.jhip.service.MailService        : Email could not be sent to user 'johndoe@localhost': Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused (Connection refused). Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: localhost, 25; timeout -1;
+  nested exception is:
+	java.net.ConnectException: Connection refused (Connection refused)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

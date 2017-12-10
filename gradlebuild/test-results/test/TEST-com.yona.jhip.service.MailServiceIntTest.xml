@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.service.MailServiceIntTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:16" hostname="Yonatans-MacBook-Pro.local" time="1.72">
+  <properties/>
+  <testcase name="testSendPasswordResetMail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.761"/>
+  <testcase name="testCreationEmail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.066"/>
+  <testcase name="testSendEmailWithException" classname="com.yona.jhip.service.MailServiceIntTest" time="0.685"/>
+  <testcase name="testSendHtmlEmail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.013"/>
+  <testcase name="testSendMultipartHtmlEmail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.05"/>
+  <testcase name="testSendEmail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.01"/>
+  <testcase name="testSendMultipartEmail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.014"/>
+  <testcase name="testSendActivationEmail" classname="com.yona.jhip.service.MailServiceIntTest" time="0.044"/>
+  <testcase name="testSendEmailFromTemplate" classname="com.yona.jhip.service.MailServiceIntTest" time="0.036"/>
+  <system-out><![CDATA[2017-12-09 11:29:17.400  WARN 29161 --- [    Test worker] com.yona.jhip.service.MailService        : Email could not be sent to user 'john.doe@example.com': null
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

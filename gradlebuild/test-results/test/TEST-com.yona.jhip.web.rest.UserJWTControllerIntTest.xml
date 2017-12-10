@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.web.rest.UserJWTControllerIntTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:28" hostname="Yonatans-MacBook-Pro.local" time="0.929">
+  <properties/>
+  <testcase name="testAuthorizeFails" classname="com.yona.jhip.web.rest.UserJWTControllerIntTest" time="0.294"/>
+  <testcase name="testAuthorizeWithRememberMe" classname="com.yona.jhip.web.rest.UserJWTControllerIntTest" time="0.321"/>
+  <testcase name="testAuthorize" classname="com.yona.jhip.web.rest.UserJWTControllerIntTest" time="0.311"/>
+  <system-out><![CDATA[2017-12-09 11:29:28.665  WARN 29161 --- [    Test worker] o.z.p.spring.web.advice.AdviceTrait      : Unauthorized: Bad credentials
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,5 +1,4 @@
 import org.gradle.internal.os.OperatingSystem
-
 buildscript {
     repositories {
         mavenLocal()
@@ -10,33 +9,45 @@ buildscript {
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${spring_boot_version}"
         classpath "org.springframework.build.gradle:propdeps-plugin:0.0.7"
+        classpath "com.github.acwatson:sonar-karma-test-report-plugin:1.0.0.4"
         //jhipster-needle-gradle-buildscript-dependency - JHipster will add additional gradle build script plugins here
     }
 }
 
 plugins {
-    id "org.sonarqube" version "2.5"
+    id "org.sonarqube" version "2.4"
     id "net.ltgt.apt" version "0.11"
     id "io.spring.dependency-management" version "1.0.3.RELEASE"
     id "com.moowork.node" version "1.2.0"
     //jhipster-needle-gradle-plugins - JHipster will add additional gradle plugins here
 }
+buildDir='gradlebuild'
+
 
 apply plugin: 'java'
 sourceCompatibility=1.8
 targetCompatibility=1.8
 apply plugin: 'maven'
+apply plugin: 'jacoco'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'war'
 apply plugin: 'propdeps'
 apply plugin: 'com.moowork.node'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'idea'
+
+apply from: 'gradle/docker.gradle'
+apply from: 'gradle/sonar.gradle'
+apply from: 'gradle/liquibase.gradle'
+apply from: 'gradle/mapstruct.gradle'
 dependencyManagement {
   imports {
     mavenBom 'org.springframework.cloud:spring-cloud-dependencies:' + spring_cloud_version
   }
 }
+
+
+
 defaultTasks 'bootRun'
 
 group = 'com.yona.jhip'
@@ -86,6 +97,11 @@ if (OperatingSystem.current().isWindows()) {
 }
 
 test {
+    jacoco {
+        append = false
+        destinationFile = file("build/jacoco/jacocoTest.exec")
+        classDumpDir = file("build/jacoco/classpathdumps")
+    }
     exclude '**/CucumberTest*'
 
     // uncomment if the tests reports are not generated
@@ -100,10 +116,6 @@ task testReport(type: TestReport) {
 }
 
 
-apply from: 'gradle/docker.gradle'
-apply from: 'gradle/sonar.gradle'
-apply from: 'gradle/liquibase.gradle'
-apply from: 'gradle/mapstruct.gradle'
 //jhipster-needle-gradle-apply-from - JHipster will add additional gradle scripts to be applied here
 
 if (project.hasProperty('prod')) {
@@ -133,7 +145,33 @@ repositories {
     mavenLocal()
     jcenter()
 }
-
+apply plugin: 'org.sonarqube'
+sonarqube {
+    properties {
+        property "sonar.projectName", "Thehipster"
+        property "sonar.test.inclusions", "**/*.spec.ts"
+        property "sonar.exclusions", ["**/node_modules/**", "**/*.spec.ts"]
+        property "sonar.projectBaseDir", "/Users/yonatanmolla/Documents/workspace3/jhippy-workstation/thehipcribs"
+        property "sonar.source", "/Users/yonatanmolla/Documents/workspace3/jhippy-workstation/thehipcribs/src/main/webapp/app/account/activate/activate.component.ts"
+        // property "sonar.test", "src/test/javascript/spec/app/**/**/*.ts"
+        property "sonar.tests", ['src/test/java', 'src/test/javascript']
+        property "sonar.jacoco.reportPaths", "/Users/yonatanmolla/Documents/workspace3/jhippy-workstation/thehipcribs/build/jacoco/jacocoTest.exec"
+        property "sonar.javascript.lov.reportPaths", "/Users/yonatanmolla/Documents/workspace3/jhippy-workstation/thehipcribs/src/test/javascript/build/test-results/karmacoverage/report-lcov/lcov.info"
+        property "sonar.ts.coverage.lcovReportPath", "/Users/yonatanmolla/Documents/workspace3/jhippy-workstation/thehipcribs/src/test/javascript/build/test-results/karmacoverage/report-lcov/lcov.info"
+    }
+}
+sourceSets {
+  main {
+    resources {
+      srcDir 'src/main/webapp/app'
+    }
+  }
+  test {
+    resources {
+      srcDir 'src/test/javascript/spec'
+    }
+  }
+}
 dependencies {
     compile "io.github.jhipster:jhipster:${jhipster_server_version}"
     compile "io.dropwizard.metrics:metrics-core:${dropwizard_metrics_version}"

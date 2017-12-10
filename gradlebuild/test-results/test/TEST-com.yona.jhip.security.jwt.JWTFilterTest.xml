@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.security.jwt.JWTFilterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:14" hostname="Yonatans-MacBook-Pro.local" time="1.247">
+  <properties/>
+  <testcase name="testJWTFilterInvalidToken" classname="com.yona.jhip.security.jwt.JWTFilterTest" time="0.044"/>
+  <testcase name="testJWTFilter" classname="com.yona.jhip.security.jwt.JWTFilterTest" time="1.2"/>
+  <testcase name="testJWTFilterMissingAuthorization" classname="com.yona.jhip.security.jwt.JWTFilterTest" time="0.001"/>
+  <testcase name="testJWTFilterMissingToken" classname="com.yona.jhip.security.jwt.JWTFilterTest" time="0.0"/>
+  <testcase name="testJWTFilterWrongScheme" classname="com.yona.jhip.security.jwt.JWTFilterTest" time="0.001"/>
+  <system-out><![CDATA[2017-12-09 11:29:14.697  INFO 29161 --- [    Test worker] c.yona.jhip.security.jwt.TokenProvider   : Invalid JWT token.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

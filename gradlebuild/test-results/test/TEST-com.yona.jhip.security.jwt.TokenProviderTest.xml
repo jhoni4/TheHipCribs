@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.security.jwt.TokenProviderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:15" hostname="Yonatans-MacBook-Pro.local" time="0.032">
+  <properties/>
+  <testcase name="testReturnFalseWhenJWTisInvalid" classname="com.yona.jhip.security.jwt.TokenProviderTest" time="0.012"/>
+  <testcase name="testReturnFalseWhenJWTisExpired" classname="com.yona.jhip.security.jwt.TokenProviderTest" time="0.005"/>
+  <testcase name="testReturnFalseWhenJWThasInvalidSignature" classname="com.yona.jhip.security.jwt.TokenProviderTest" time="0.004"/>
+  <testcase name="testReturnFalseWhenJWTisMalformed" classname="com.yona.jhip.security.jwt.TokenProviderTest" time="0.003"/>
+  <testcase name="testReturnFalseWhenJWTisUnsupported" classname="com.yona.jhip.security.jwt.TokenProviderTest" time="0.007"/>
+  <system-out><![CDATA[2017-12-09 11:29:15.929  INFO 29161 --- [    Test worker] c.yona.jhip.security.jwt.TokenProvider   : JWT token compact of handler are invalid.
+2017-12-09 11:29:15.935  INFO 29161 --- [    Test worker] c.yona.jhip.security.jwt.TokenProvider   : Expired JWT token.
+2017-12-09 11:29:15.940  INFO 29161 --- [    Test worker] c.yona.jhip.security.jwt.TokenProvider   : Invalid JWT signature.
+2017-12-09 11:29:15.943  INFO 29161 --- [    Test worker] c.yona.jhip.security.jwt.TokenProvider   : Invalid JWT token.
+2017-12-09 11:29:15.949  INFO 29161 --- [    Test worker] c.yona.jhip.security.jwt.TokenProvider   : Unsupported JWT token.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

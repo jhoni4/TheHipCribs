@@ -1,0 +1,9 @@
+/* crib-card.css */
+.thumbnail {
+  min-height: 380px;
+  width: 500px;
+}
+
+.label {
+  display: inline-block;
+}

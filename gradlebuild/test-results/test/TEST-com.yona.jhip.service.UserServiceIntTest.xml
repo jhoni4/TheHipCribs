@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.yona.jhip.service.UserServiceIntTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-12-09T16:29:17" hostname="Yonatans-MacBook-Pro.local" time="0.692">
+  <properties/>
+  <testcase name="assertThatOnlyActivatedUserCanRequestPasswordReset" classname="com.yona.jhip.service.UserServiceIntTest" time="0.234"/>
+  <testcase name="assertThatUserMustExistToResetPassword" classname="com.yona.jhip.service.UserServiceIntTest" time="0.043"/>
+  <testcase name="assertThatAnonymousUserIsNotGet" classname="com.yona.jhip.service.UserServiceIntTest" time="0.07"/>
+  <testcase name="assertThatResetKeyMustBeValid" classname="com.yona.jhip.service.UserServiceIntTest" time="0.027"/>
+  <testcase name="testRemoveNotActivatedUsers" classname="com.yona.jhip.service.UserServiceIntTest" time="0.065"/>
+  <testcase name="assertThatUserCanResetPassword" classname="com.yona.jhip.service.UserServiceIntTest" time="0.166"/>
+  <testcase name="testFindNotActivatedUsersByCreationDateBefore" classname="com.yona.jhip.service.UserServiceIntTest" time="0.048"/>
+  <testcase name="assertThatResetKeyMustNotBeOlderThan24Hours" classname="com.yona.jhip.service.UserServiceIntTest" time="0.025"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

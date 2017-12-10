@@ -1,0 +1,34 @@
+
+      <a [routerLink]="['../cards']">
+<div class="thumbnail jhi- card">
+  <img src="../../../content/images/crib-1.jpg" alt="crib thumbnail1">
+  <!--<img class="image-thumbnail" src="../../../content/images/{{ crib.image }}.jpg" alt="crib thumbnail">-->
+
+  <div class="caption">
+    <div *ngIf="!crib.showDetails">
+      <h4>
+        <span class="label label-primary">
+          {{ crib.type }}
+        </span>
+      </h4>
+      <h3>
+        <i class="glyphicon glyphicon-tag"></i> 
+          {{ crib.price | currency:'USD':true }}
+      </h3>
+      <h4>
+        <i class="glyphicon glyphicon-home"></i> 
+          {{ crib.address }}
+      </h4>
+
+      <hr>
+        <button 
+          class="btn btn-sm btn-success"
+          *ngIf="!crib.showDetails"
+          (click)="crib.showDetails = !crib.showDetails">
+          Details
+        </button>
+
+    </div>
+  </div>
+</div>
+      </a>
